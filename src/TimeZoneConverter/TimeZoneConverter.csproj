@@ -11,7 +11,7 @@
     <IncludeSource>True</IncludeSource>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <Version>3.5.0</Version>
+    <Version>3.5.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
@@ -31,7 +31,7 @@
   <PropertyGroup>
     <FrameworkPathOverride Condition="'$(TargetFramework)' == 'net35'">$(MSBuildProgramFiles32)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile\Client</FrameworkPathOverride>
   </PropertyGroup>
-    
+
   <ItemGroup Condition="'$(TargetFramework)'=='netstandard1.3'">
     <PackageReference Remove="NETStandard.Library" />
     <PackageReference Include="System.Collections" Version="4.3.0" />
